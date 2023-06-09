@@ -6,3 +6,11 @@ CREATE TABLE `test`.`employee` (
   `password` VARCHAR(20) NULL,
   `address` VARCHAR(45) NULL,
   PRIMARY KEY (`id`));
+
+
+
+INSERT INTO `test`.`employee` (`id`, `first_name`, `last_name`, `username`, `password`, `address`) VALUES ('1072165942', 'karina', 'linares', 'karlina7369', '123456', 'calle 123 n 58 79');
+
+INSERT INTO `test`.`employee` (`id`, `first_name`, `last_name`, `username`, `password`, `address`) VALUES ('854563210', 'carlos', 'clavijo', 'carclavi382', '789654', 'carrera 13 n 56 98 ');
+SELECT  e.first_name FROM test.employee  e  ;
+SELECT  * FROM test.employee  e  where  e.first_name ='carlos' ;
