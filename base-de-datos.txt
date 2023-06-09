@@ -1,0 +1,8 @@
+CREATE TABLE `test`.`employee` (
+  `id` INT NOT NULL,
+  `first_name` VARCHAR(20) NULL,
+  `last_name` VARCHAR(20) NULL,
+  `username` VARCHAR(250) NULL,
+  `password` VARCHAR(20) NULL,
+  `address` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`));
