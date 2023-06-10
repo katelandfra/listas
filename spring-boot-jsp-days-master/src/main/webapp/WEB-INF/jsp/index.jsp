@@ -1,9 +1,10 @@
 <%@ include file="layout/navigation.jsp"%>
 
 <div class="container">
-	<h1 class="text-dark mt-5"> ${name}</h1>
-	<button class="btn btn-primary mt-3" onclick="alert('hyvercode.com')">Click
-		Me!</button>
+	<h1 class="text-dark mt-5">
+caterin landinez ADSO 2455270
+</h1>
+
 </div>
 
-<%@ include file="layout/footer.jsp"%>
+

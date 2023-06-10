@@ -14,7 +14,7 @@
 		<c:if test="${empty error}">
 			<div class="alert alert-success alert-dismissible fade show"
 				 role="alert">
-				<strong><%=response.getStatus()%></strong> Success
+				<strong><%=response.getStatus()%></strong> exito
 				<button type="button" class="btn-close" data-bs-dismiss="alert"
 						aria-label="Close"></button>
 			</div>
@@ -24,8 +24,8 @@
 		<h5>Users</h5>
 		<div>
 			<a href="/users?page=${page.number+1}&size=${page.size}"
-				class="btn btn-primary">Refresh</a> <a href="/users/user"
-				class="btn btn-primary">Create</a>
+				class="btn btn-primary">actualizar el usuario</a> <a href="/users/user"
+				class="btn btn-primary">Crear</a>
 		</div>
 	</div>
 	<div class="mt-2">
@@ -33,10 +33,10 @@
 			<thead>
 				<tr class="table-active">
 					<th scope="col">No.</th>
-					<th scope="col">Fullname</th>
+					<th scope="col">nombre completo</th>
 					<th scope="col">Email</th>
-					<th scope="col">Birth Date</th>
-					<th scope="col">Active</th>
+					<th scope="col">fecha de nacimiento</th>
+					<th scope="col">Activo</th>
 					<th scope="col">#</th>
 				</tr>
 			</thead>
@@ -47,9 +47,9 @@
 						<td>${user.name}</td>
 						<td>${user.email}</td>
 						<td>${user.birthDate}</td>
-						<td>${user.isActive?'Yes':'No'}</td>
-						<td><a href="/users/user/${user.userId}">Edit |</a><a
-							href="/users/delete/${user.userId}">Delete</a></td>
+						<td>${user.isActive?'si':'No'}</td>
+						<td><a href="/users/user/${user.userId}">Editar |</a><a
+							href="/users/delete/${user.userId}">Borrar</a></td>
 					</tr>
 				</c:forEach>
 			</tbody>
@@ -62,7 +62,7 @@
 					<ul class="pagination">
 						<c:if test="${page.hasPrevious()}">
 							<li class="page-item"><a class="page-link"
-								href="/users?page=${page.number}&size=${page.size}">Prev</a></li>
+								href="/users?page=${page.number}&size=${page.size}">anterior</a></li>
 						</c:if>
 						<li class="page-item"><a class="page-link">${page.number +1}</a></li>
 						<li class="page-item active" aria-current="page"><a
@@ -70,7 +70,7 @@
 						<li class="page-item"><a class="page-link">${page.totalPages}</a></li>
 						<c:if test="${!page.last}">
 							<li class="page-item"><a class="page-link"
-								href="/users?page=${page.number + 2}&size=${page.size}">Next</a></li>
+								href="/users?page=${page.number + 2}&size=${page.size}">siguiente</a></li>
 						</c:if>
 					</ul>
 				</nav>

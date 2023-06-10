@@ -4,11 +4,11 @@
 	<div class="row">
 		<div class="col-md-6 col-md-offset-3 ">
 			<div class="panel panel-primary">
-				<h5 class="panel-heading mt-2">Create User</h5>
+				<h5 class="panel-heading mt-2">Crear usuario</h5>
 				<div class="panel-body mt-3">
 					<form method="post" action="/users/user">
 						<div class="form-group mb-3">
-							<label class="label-control">Name</label> <input id="name"
+							<label class="label-control">Nombre</label> <input id="name"
 								name="name" type="text" class="form-control"
 								placeholder="Input your name" required="required" />
 						</div>
@@ -18,20 +18,20 @@
 								class="form-control" required="required" />
 						</div>
 						<div class="form-group mb-3">
-							<label class="label-control">Birth Date</label> <input
+							<label class="label-control">fecha de nacimiento</label> <input
 								id="birthDate" name="birthDate" type="date" class="form-control"
 								required="required" />
 						</div>
 						<div class="form-group mb-3">
-							<label class="label-control">Active</label>
+							<label class="label-control">Activo</label>
 							 <select id="isActive"
 								name="isActive" class="form-select" required="required">
-								<option value="true">Yes</option>
+								<option value="true">si</option>
 								<option value="false">No</option>
 							</select>
 						</div>
-						<button class="btn btn-warning mr-2" onclick="history.back()">Cancel</button>
-						<button type="submit" class="btn btn-primary">Save</button>
+						<button class="btn btn-warning mr-2" onclick="history.back()">Cancelar</button>
+						<button type="submit" class="btn btn-primary">guardar</button>
 					</form>
 				</div>
 			</div>
